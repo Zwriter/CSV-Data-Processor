@@ -1,19 +1,12 @@
-import sys
 import os
 from pathlib import Path
 import pandas as pd
 
 def validate_file_path(path):
-
     try:
         file_path = Path(path).expanduser().resolve()
     except Exception as e:
         raise ValueError(f"Invalid path format: {e}")
-    
-    # if sys.platform.startswith("win"):
-    #     invalid_chars = '<>:"/\\|?*'
-    #     if any(char in str(file_path) for char in invalid_chars):
-    #         raise ValueError(f"Path contains invalid charactes: {invalid_chars}")
         
     if not file_path.exists():
         raise FileNotFoundError(f"File path does not exist: {file_path}")
@@ -27,7 +20,7 @@ def validate_file_path(path):
     return file_path
 
 
-def csv_reader(file_path):
+def reader(file_path):
     path = validate_file_path(file_path)
 
     try:
