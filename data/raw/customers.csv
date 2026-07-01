@@ -19,3 +19,13 @@ customer_id,first_name,last_name,email,signup_date
 18,Tom,Wilson,tom.wilson@email.com,2024-13-15
 19,Lucy,Moore,lucy.moore@email.com,2024-02-30
 20,David,Taylor,david.taylor@email.com,not_a_date
+21,,Anderson,anderson@email.com,2024-09-01
+22,Emily,,emily@email.com,2024-09-02
+23,Michael,Scott,michael.scott,2024-09-03
+24,Sarah,Connor,sarah@@email.com,2024-09-04
+25,Peter,Parker,,2024-09-05
+26,-1,Invalid,negative.id@email.com,2024-09-06
+1,Duplicate,Customer,duplicate@email.com,2024-09-07
+28,Anna,Bell,anna.bell@email.com,
+29,George,King,   ,2024-09-09
+30,Chris,Davis,chris.davis@email.com,2025-13-01

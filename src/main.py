@@ -3,7 +3,7 @@ from transformation.normalizer import normalize
 from config.config import ACCEPTED_DATE_FORMATS
 from config.customer_config import CUSTOMER_DATE_COLUMN
 
-def test_normalizer():
+def customer_normalizer():
     df = reader("data/raw/customers.csv")
     df = normalize(
         df, 
@@ -13,5 +13,5 @@ def test_normalizer():
     return df
 
 if __name__ == "__main__":
-    print(test_normalizer())
+    print(customer_normalizer())
     
